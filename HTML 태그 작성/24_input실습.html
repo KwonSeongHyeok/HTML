@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <title>피자 주문 결과</title>
+    <style>
+      input {
+        border: 1px solid #ccc;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="컨테이너">
+      <h1>피자 주문 내역</h1>
+
+      <form>
+        <label
+          >고객명:
+          <input
+            type="text"
+            name="clientName"
+            placeholder="이름을 입력하세요"
+            required
+          />
+        </label>
+        <br /><br />
+        <label
+          >전화번호:
+          <input
+            type="tel"
+            name="clientPhone"
+            placeholder="전화번호를 입력하세요"
+            required
+          />
+        </label>
+        <br /><br />
+        <label
+          >Email:
+          <input
+            type="email"
+            name="clientEmail"
+            placeholder="이메일을 입력하세요"
+            required
+          />
+        </label>
+        <br /><br />
+
+        <label> <input type="radio" name="size" value="Small" /> Small </label>
+        <br /><br />
+        <label>
+          <input type="radio" name="size" value="Medium" /> Medium
+        </label>
+        <br /><br />
+        <label> <input type="radio" name="size" value="Large" /> Large </label>
+        <pre>  
+ <label> <input type="checkbox" name="topping" value="베이컨"> 베이컨
+ </label>
+ <label> <input type="checkbox" name="topping" value="치즈"> 치즈
+          </label> 
+ <label> <input type="checkbox" name="topping" value="양파"> 양파
+          </label> 
+ <label> <input type="checkbox" name="topping" value="버섯"> 버섯
+          </label>
+          </pre>
+
+        <label
+          >희망배송시간
+          <input type="time" name="wishTime" />
+        </label>
+
+        <p>배송시 요청사항 :</p>
+
+        <button type="submit">주문하기</button>
+      </form>
+    </div>
+  </body>
+</html>
