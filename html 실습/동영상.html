@@ -5,33 +5,79 @@
     <title>동영상 게시판</title>
     <style>
       video {
-        height: 500px;
+        margin: 0 auto;
+        width: 50%;
+        display: block;
+        border-radius: 10px;
       }
       .icon {
         width: 50px;
         height: 50px;
       }
       body {
+        background-color: aliceblue;
+      }
+      .컨테이너 {
+        background-color: white;
+        width: 70%;
+        box-shadow: 0 0 10px blue;
+        border-radius: 5%;
         margin: 0 auto;
+      }
+      .댓글들 {
+        padding: 10px;
+      }
+      .댓글{
+        border: 1px solid black;
+        background-color: ivory;
+        padding: 10px;
+        border-radius: 10px;
+        
+      }
+      h1 {
+        text-align: center;
+      }
+      a {
+        text-align: center;
+        margin: 0 auto;
+      }
+      .버튼꾸미기{
+        display: block;
         text-align: center;
       }
     </style>
   </head>
   <body>
-    <h1>동영상 게시판</h1>
-
-    <a href="홈페이지게시판.html">
-      <img class="icon" src="../이미지들/lovelyMarley.jpg"
-    /></a>
-    <a href="홈페이지메인.html">
-      <img class="icon" src="../이미지들/swimmingPartyMarley.jpg"
-    /></a>
-    <br />
-    <video autoplay muted loop>
-      <source
-        src="C:/Users/user1/frontend-workspace/html/비디오들/바다.mp4"
-        type="video/mp4"
-      />
-    </video>
+    <div class="컨테이너">
+      <h1>동영상 게시판</h1>
+      <video autoplay muted loop>
+        <source src="../비디오들/난로.mp4" type="video/mp4" />
+      </video>
+      <br />
+      <div class="댓글들">
+        댓글확인
+        <div class="댓글">
+          <p>사용자 :</p>
+          <p>동영상이 멋있어요.</p>
+        </div>
+          <div class="댓글">
+          <p>사용자 :</p>
+          <p>좋은 이미지가 있네요~~^^</p>
+        </div>
+        <div class="댓글">
+          <input type="text" placeholder="아이디를 입력하세요" />
+          <input type="text" placeholder="내용를 입력하세요" />
+        </div>
+      </div>
+      <br />
+      <div class="버튼꾸미기">
+        <a href="홈페이지게시판.html">
+          <img class="icon" src="../이미지들/lovelyMarley.jpg"
+        /></a>
+        <a href="홈페이지메인.html">
+          <img class="icon" src="../이미지들/swimmingPartyMarley.jpg"
+        /></a>
+      </div>
+    </div>
   </body>
 </html>
