@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <title>한식 주문하기</title>
+    <style>
+      body {
+        background-color: #f9f9f9;
+      }
+      .컨테이너 {
+        width: 70%;
+        background-color: white;
+        padding: 20px;
+        margin: 20px auto; /* auto 경우 가운데 정렬과 같은 나열을 사용할 때 쓰임 */
+        border-radius: 10px;
+        box-shadow: 0 0 10px #d7d7d7;
+       
+      }
+      h1,
+      button {
+        text-align: center;
+      }
+      button {
+        width: 200px;
+        background-color: blueviolet;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        padding: 10px 20px;
+      }
+      .메인이미지 {
+        width: 150px;
+        height: 150px;
+        margin: 20px;
+      }
+      .옵션이미지 {
+        width: 100px;
+        height: 100px;
+        margin: 20px;
+      }
+      .메인꾸미기, .옵션꾸미기{
+        display: flex;
+        text-align: center;
+        margin: 20px auto;
+      }
+      .헤더, .푸터{
+        background-color: rgb(105, 74, 144);
+        color: white;
+        padding: 20px;
+        text-align: center;
+      }
+      .네비게이션{
+        background-color: darkgray;
+        padding: 10px;
+        text-align: center;
+      }
+      ul{
+            list-style-type: none;
+        }
+        li{
+            display: inline;
+        }
+        a{
+            color: aqua;
+            font-weight: bold;
+        }
+    </style>
+  </head>
+  <body>
+    
+    <div class="컨테이너">
+        <div class="헤더">
+            <h1>KH 배달 서비스 - 한식 주문하기</h1>
+        </div>
+        <div class="네비게이션">
+            <ul>
+                <li><a href="홈페이지.html">홈</a></li>
+                <li><a href="#">주문하기</a></li>
+                <li><a href="한식메뉴.html">한식메뉴소개</a></li>
+                <li><a href="피자메뉴.html">피자메뉴소개</a></li>
+            </ul>
+        </div>
+    <div class="컨테이너">
+      <form>
+        <div class="메인꾸미기">
+          <label>메뉴선택:</label><br>
+            <div>
+                <img class="메인이미지" src="음식이미지/된장찌개.PNG" alt="된장찌개"/>
+                <br>
+                <input type="radio" />된장찌개
+            </div>
+            <div>
+                <img class="메인이미지" src="음식이미지/김치찌개.jpg" alt="김치찌개"/>
+                <br>
+                <input type="radio" />김치찌개
+            </div>
+                <div>
+                <img class="메인이미지" src="음식이미지/비빔밥.PNG" alt="비빔밥"/>
+                <br>
+                <input type="radio" />비빔밥
+            </div>
+            <div>
+                <img class="메인이미지" src="음식이미지/불고기.PNG" alt="불고기"/>
+                <br>
+                <input type="radio" />불고기
+            </div>
+ 
+        </div>
+        <br /><br />
+        <div class="옵션꾸미기">
+          <label>추가옵션:</label>
+          <div>
+          <img class="옵션이미지" src="음식이미지/계란.png"/>
+          <br>
+          <input type="checkbox" />계란
+        </div>
+        <div>
+          <img class="옵션이미지" src="음식이미지/두부.png" />
+          <br>
+          <input type="checkbox" />두부
+        </div>
+        <div>
+          <img class="옵션이미지" src="음식이미지/김치.png" />
+          <br>
+          <input type="checkbox" />김치
+        </div>
+        </div>
+        <br /><br />
+        <div>
+          <label>맛 선택:</label>
+          <select>
+            <option>매운맛</option>
+            <option>보통맛</option>
+            <option>안매운맛</option>
+          </select>
+        </div>
+        <br /><br />
+        <div>
+          <label>배달주소:</label>
+          <textarea rows="3"></textarea><br />
+          <small>도서/산간 지역은 배달비 3000원 부과됩니다.</small>
+        </div>
+        <button>주문하기</button>
+      </form>
+    </div>
+    <div class="푸터">
+        &copy; All rights reserverd.
+    </div>
+  </body>
+</html>
