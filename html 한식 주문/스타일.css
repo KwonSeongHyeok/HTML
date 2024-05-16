@@ -1,0 +1,89 @@
+h1{
+  text-align: center;
+}
+.헤더, .푸터 {
+background-color: rgb(105, 74, 144);
+color: white;
+padding: 20px;
+text-align: center;
+}
+.네비게이션 {
+background-color: aliceblue;
+padding: 10px;
+text-align: center;
+}
+ul {
+list-style-type: none;
+}
+li {
+display: inline;
+}
+a {
+text-decoration: none; /* 밑줄 제거 */
+color: mediumseagreen; /* 글자색 변경 */
+font-weight: bold; /* 글자 표현 두께 변경 */
+}
+body {
+background-color: #f9f9f9;
+}
+.특징 {
+display: inline-block; /* 하나의 블록으로 만들어주기 */
+padding: 20px;
+background-color: white;
+border-radius: 10px;
+margin: 20px; /* 공간 설정 */
+box-shadow: 0 0 10px #d7d7d7;
+display: block;
+}
+.특징들{
+text-align: center;
+}
+
+/* ***** 메뉴.html에 작성한 styleSheet ***** */
+.메인 {
+    width: 80%;
+    margin: 20px auto;
+  }
+
+.메뉴 {
+background-color: white;
+padding: 20px;
+border-radius: 10px;
+box-shadow: 0 0 10px wheat;
+}
+
+.아이템 {
+text-align: center;
+}
+
+/* div 클래스 아이템 안에 있는 img만 크기 조정 */
+.아이템 img {
+  width: 100px;
+  height: 100px;
+  border-radius: 100px;
+}
+
+/* ***** 주문하기.html에 작성한 styleSheet ***** */
+.메인-주문하기 {
+width: 70%;
+background-color: white;
+padding: 20px;
+margin: 20px auto; /* auto 경우 가운데 정렬과 같은 나열을 사용할 때 쓰임 */
+border-radius: 10px;
+box-shadow: 0 0 10px #d7d7d7;
+}
+.메인이미지 {
+width: 150px;
+height: 150px;
+margin: 20px;
+}
+.옵션이미지 {
+width: 100px;
+height: 100px;
+margin: 20px;
+}
+.메인꾸미기, .옵션꾸미기{
+display: flex;
+text-align: center;
+margin: 20px auto;
+}
