@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <title>실습 5-1문제</title>
+    </head>
+    <body>
+        <div class="컨테이너">
+            <div>
+                <ol>
+                   <li>
+                    <label>납품자명 : 
+                        <input type="text" name="name">
+                    </label>
+                   </li> 
+                   <li>
+                    <label>email : 
+                        <input type="email" name="email" placeholder="anwser@naver.com">
+                    </label>
+                   </li>
+                   <li>
+                    <label>홈페이지 : 
+                        <input type="text" name="homepage" value="http://">
+                    </label>
+                   </li>
+                   <li>
+                    <label>지역 : 
+                        <select name="location">
+                            <option>부산</option>
+                        </select>
+                    </label>
+                   </li>
+                </ol>
+                <ul>
+                    <li>상품명 : 
+                        <input type="text" name="productName">
+                    </li>
+                    <li>납품수량 : 
+                        <input type="number" name="amount" placeholder="최소 100">
+                    </li>
+                    <li>납품등급 :
+                        <input type="range" name="grade" min="1" max="5">
+                    </li>
+                    <li>기타사항 : 
+                        <textarea rows="5" cols="20"></textarea>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </body>
+</html>
